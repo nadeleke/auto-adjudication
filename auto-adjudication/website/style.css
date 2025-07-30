@@ -1,0 +1,85 @@
+/* Use the Orbitron sci‑fi font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  height: 100vh;
+  background: #000;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Animated neon gradient background */
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+}
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position:100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin: 10vh auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="file"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #0ff;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  border: 2px solid #f0f;
+  color: #f0f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,0,255,0.6);
+}
+
+button:hover {
+  background: #f0f;
+  color: #000;
+  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+#status {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
