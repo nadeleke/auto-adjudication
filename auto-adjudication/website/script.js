@@ -1,6 +1,6 @@
 console.log("✅ script.js has loaded");
 
-const API_BASE = "https://hugknikztl.execute-api.us-east-1.amazonaws.com"; // no trailing slash
+const API_BASE = "https://kp38wmy9ce.execute-api.us-east-1.amazonaws.com/"; // no trailing slash
 
 document.getElementById('upload-form').addEventListener('submit', async (e) => {
   console.log("🔔 upload-form submit handler fired");
